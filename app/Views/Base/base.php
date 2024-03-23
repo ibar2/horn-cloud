@@ -57,7 +57,7 @@
           
           <a class="btn btn-outline-primary" href="<?= site_url('/signin/logout') ?>">Log Out</a>
         <?php else: ?>
-        <a class="btn btn-outline-primary" href="<?= site_url('/signin') ?>">Sign In</a>
+        <a class="btn btn-outline-primary" href="<?= site_url('/signin') ?>.php">Sign In</a>
       <a class="btn btn-outline-primary" href="<?= site_url('/signup') ?>">Sign up</a>
       <?php endif; ?>
     </div>
