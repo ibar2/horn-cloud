@@ -40,7 +40,7 @@ class signup extends BaseController {
     private function send_activation($user){
         $email = service('email');
         $email->setTo($user->email);
-        $email->setSubject('testing email');
+        $email->setSubject('Activation email');
         $message = view('Signup/activation', ['token' => $user->token]);
         $email->setMessage($message);
 

@@ -16,7 +16,7 @@ class App extends BaseConfig
      *
      *    http://example.com/
      */
-    public string $baseURL = 'http://horncloud.localhost:80/';
+    public string $baseURL = 'https://horn-cloud-6847c9cb1b97.herokuapp.com/';
 
     /**
      * Allowed Hostnames in the Site URL other than the hostname in the baseURL.
@@ -29,7 +29,7 @@ class App extends BaseConfig
      *
      * @var list<string>
      */
-    public array $allowedHostnames = [];
+    public array $allowedHostnames = ["*"];
 
     /**
      * --------------------------------------------------------------------------

@@ -37,7 +37,7 @@ class Upload extends BaseController
         $user-> profile_url = $file->getName();
         $model->save($user);
 
-
+        return redirect()->to('/upload/display');
     }
     else{
         return redirect()->to('/signin');
