@@ -1,12 +1,12 @@
 FROM php:apache
-WORKDIR /var/www/html
-COPY . /var/www/html
+# WORKDIR /var/www/html
 RUN apt-get update && \
     apt-get install -y \
     zip \
     unzip \
     && rm -rf /var/lib/apt/lists/*
-ENV COMPOSER_ALLOW_SUPERUSER 1
+# ENV COMPOSER_ALLOW_SUPERUSER 1
+VOLUME . /var/ww/html
 # RUN docker-php-ext-install intl
 # RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 # RUN composer install
